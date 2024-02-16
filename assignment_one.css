@@ -50,7 +50,7 @@
       gap: 5px;
     }
     img {
-      min-height: 16.375rem;
+      max-height: 50px;
     }
   }
   
