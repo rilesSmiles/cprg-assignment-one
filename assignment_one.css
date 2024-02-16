@@ -1,0 +1,21 @@
+#images {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: ;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr)); 
+    grid-gap: 20px; 
+  }
+  
+  
+  /* Media query for adjusting layout on smaller screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusting grid columns for smaller screens */
+      grid-gap: 10px; /* Decrease gap between grid items */
+    }
+  }
+  
