@@ -6,24 +6,30 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr)); 
-    grid-gap: 20px; 
+   
   }
   
   
-  /* Media query for adjusting layout on smaller screens */
+  /* mobile */
   @media screen and (max-width: 768px) {
     .container {
       grid-template-columns: 100%; 
-     
+      grid-template-rows: 9 ;
     } 
   }
-  @media screen and (max-width: 768px) {
+  /*tablet*/
+  @media screen and (min-width: 768px) {
+    .card-content {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 4;
+    }
+
     img {
       min-height: 15.5rem;
     }
   }
-    
+ /*desktop*/   
   @media screen and (min-width: 1200px) {
     img {
       min-height: 16.375rem;
