@@ -14,8 +14,27 @@
   /* Media query for adjusting layout on smaller screens */
   @media screen and (max-width: 768px) {
     .container {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusting grid columns for smaller screens */
-      grid-gap: 10px; /* Decrease gap between grid items */
+      grid-template-columns: 100%; 
+     
+    } 
+  }
+  @media screen and (max-width: 768px) {
+    img {
+      min-height: 15.5rem;
+    }
+  }
+    
+  @media screen and (min-width: 1200px) {
+    img {
+      min-height: 16.375rem;
     }
   }
   
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .header,
+  .subheader {
+    margin: 0;
+  }
