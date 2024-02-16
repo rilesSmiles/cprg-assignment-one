@@ -1,18 +1,9 @@
-#images {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: ;
-}
 
-.container {
-    display: grid;
-   
-  }
   
   
   /* mobile */
   @media screen and (max-width: 768px) {
-    .container {
+    .card {
       display: grid;
       grid-template-columns: 100%; 
       grid-template-rows: 9 ;
@@ -25,7 +16,7 @@
   }
   /*tablet*/
   @media screen and (min-width: 768px) {
-    .container {
+    .card {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 4;
